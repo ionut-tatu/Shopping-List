@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+	font-size: 12px;
+}
+
+/* Main navigation */
+header#navWrapper {
+    background: url(images/NavigationShadowBottom.png) repeat-x 50% 100% #f2f2f2;
+    background-size: 2200px 20px;
+    width: 100%;
+    height: 70px;
+    display: block;
+    text-align: center;
+}
+
+header#navWrapper a {
+	color: #626262;
+	margin: 15px 15px 0 0;
+	display: inline-block;
+	font-size: 10px;
+}
+
+header#navWrapper a:hover {
+	text-decoration: none;
+	color: #e06060;
+}
+
+header#navWrapper a:hover > i {
+	color: #e06060;
+}
+
+header#navWrapper a.selected {
+	color: #c15d5d;
+}
+header#navWrapper a.selected > i {
+	color: #c15d5d;
+}
+
+header#navWrapper a i {
+	display: block;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+
+/* Recipe List */
+main {
+	padding: 50px 0 40px 0 !important;
+}
+#recipeList article {
+	padding: 5px 10px;
+}
+#recipeList article > div {
+	min-height: 360px;
+	border: 1px solid #ccc;
+}
+#recipeList article > div .caption {
+	padding: 5px 10px;
+	color: #000;
+}
+
+/* Recipe */
+#recipe .description h3 {
+	margin-top: 0;
+}
+#recipe .recipeNavigation {
+	margin-bottom: 20px;
+}
+
+/* Footer */
+#footer {
+	text-align: center;
+	color: #a4abb1;
+	height: 80px;
+	line-height: 80px;
+}

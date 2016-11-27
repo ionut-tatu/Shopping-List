@@ -36,6 +36,8 @@ class App
 
 		require_once '../app/controllers/' . $this->controller . '.php';
 
+		$this->controller .= 'Controller';
+
 		$this->controller = new $this->controller($this->registry);
 
 		if(isset($url[1])) {

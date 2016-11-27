@@ -10,7 +10,8 @@ class DB
 		try {
 			$this->connection = new \PDO("mysql:host=" . $hostname . ";port=" . $port . ";dbname=" . $database, $username, $password, array(\PDO::ATTR_PERSISTENT => true));
 		} catch(\PDOException $e) {
-			throw new \Exception('Failed to connect to database. Reason: \'' . $e->getMessage() . '\'');
+			echo '<p>Opps! Something went wrong! Please config your database config file first at app/config/database.php.</p><p>' . $e->getMessage() . '</p>';
+			exit();
 		}
 
 		$this->connection->exec("SET NAMES 'utf8'");
