@@ -1,0 +1,42 @@
+[
+	{
+		"recipes": [
+			{
+				"name": "Chargrilled Vegetable Stack",
+				"description": "Preheat the oven to 180°C. Lightly spray a spring latched tin with baking spray and line the rim with baking paper.<br /><br />Lay two wraps on the base of the tin then spread with ¼ of the pasta sauce, then add a layer of vegetables.<br /><br />Add a wrap on top and repeat the steps above until the Vegetable Stack is complete. Make sure to end the stack with a wrap on top.<br /><br />Place in the oven and bake for 30 minutes.<br /><br />Remove from oven and allow to stand for 5 minutes. Sprinkle the feta, toasted nuts and basil leaves on top. Peel off baking paper and cut into wedges.<br /><br />Tip:<br /><br />Wraps make a great alternative to lasagne pasta sheets and cook a lot faster as well.",
+				"image": "Farrah-Wraps-Vege-Stack-540.jpg",
+				"ingredientes": "<ul><li>  6 Farrah Wraps (assorted flavours)</li><li>  2 cups blanched spinach leaves</li><li>  1 cup spicy tomato sauce</li><li>  ½ eggplant , sliced and chargrilled</li><li>  1 courgette, sliced and chargrilled</li><li>  1 carrot sliced, steamed and chargrilled</li><li>  1 pumpkin sliced, steamed and chargrilled</li><li>  3 portobello mushrooms, sliced and chargrilled</li><li>  3 capsicums, deseeded and chargrilled</li><li>  3 tsp toasted nuts </li><li>  ¼ cup crumbled feta</li><li>  Basil leaves to garnish</li></ul>"},
+			{
+				"name": "Antipasto Skewers",
+				"description": "<p>1. Thread the sausage, haloumi, artichoke, onion and eggplant onto skewers. Spray skewers with cooking oil.</p><p>2. Preheat a barbecue to moderate heat. Cook and turn skewers for 5-7 minutes or until browned.</p><p>3. To make pesto, process basil, garlic, parmesan and pine nuts until chopped finely. While processor is going, gradually add combined oil and juice until pesto is almost smooth.</p><p>4. Serve antipasto skewers with pesto drizzled over the top.</p>",
+				"image": "AntipastoSkewers_540x380px.jpg",
+				"ingredientes": "<ul><li>2  chorizo sausages, thickly sliced</li><li>200 g haloumi cheese, cut into 2cm cubes</li><li>280 g marinated artichoke hearts, drained, halved</li><li>1  large red onion, cut into thin wedges</li><li>2  eggplants, cut in to 2cm pieces</li><li>  Cooking oil spray</li><li>12  skewers</li><li>1 1/2 cups firmly packed basil leaves</li><li>1  clove garlic, chopped</li><li>2 Tbsp fresh parmesan, grated</li><li>1 Tbsp pine nuts, toasted</li><li>1/4 cup olive oil</li><li>1 Tbsp lemon juice</li></ul>"
+			},
+			{
+				"name": "Seafood Pasta Salad",
+				"description": "<p>1. In a large frying pan, heat 1 Tbsp oil and toss in 1 clove of crushed garlic.  Allow the garlic to infuse the oil for 1 to 2 minutes.</p><p>2. Add in the marinara mix and cook in the garlic oil for 5 to 7 minutes, until cooked through.  Remove from the pan and set aside to cool.</p><p>3. Cook pasta as per packet instructions and drain well. Refresh your pasta with some cold water, drain again ensuring all the water has been removed.</p><p>4. When cool, toss into a large bowl and mix with the cooked marinara mix.</p><p>5. To make the vinaigrette:  place lemon juice, 1 clove of crushed garlic, horseradish cream, pepper and salt in a bowl.  Whisk in the first few drops of oil then pour the remainder of the oil in a steady stream and whisk until thick and emulsified. Store in the fridge until you are ready to dress the salad.</p><p>6. Pour half the vinaigrette over the marinara mix and toss through.</p><p>7. When ready to serve, pour over the remainder of the dressing.</p>",
+				"image": "seafood-pasta-540.jpg",
+				"ingredientes": "<ul><li>1 Tbsp olive oil, plus 2/3 cup for the dressing</li><li>2  garlic cloves, crushed</li><li>500g  fresh marinara mix, well drained</li><li>300g  pasta spirals</li><li>½  red onion, diced</li><li>½  yellow capsicum, diced</li><li>½  red capsicum, diced</li><li>1 Tbsp dill, chopped</li><li>1 Tbsp chives, chopped</li><li>2 Tbsp flat leaf parsley, roughly chopped</li><li>¼ cup lemon juice</li><li>2 Tbsp horseradish cream</li><li>  pinch of salt </li><li>  pinch each of white pepper</li></ul>"
+			},
+			{
+				"name": "Crispy Cauliflower Salad",
+				"description": "<p>1. Preheat oven to 200°C (180°C fan forced). Place cauliflower in a roasting pan. Add 2 tablespoon of the oil and toss to coat. Season with salt and pepper. Roast for 30 minutes or until golden. Cool and transfer to a bowl. </p><p>2. Meanwhile, place pine nuts onto another tray. Roast for 5-8 minutes or until golden and add to the cauliflower. </p><p>3. Heat 1 tablespoon of the oil in a large, deep frying pan over medium heat. Add onion and garlic. Cook for 4 minutes or until softened. Sprinkle Moroccan seasoning and stir until combined. Add couscous, cranberries and water. Bring to the boil, cover and simmer for 8-10 minutes, stirring occasionally, until couscous is tender. Remove from heat and cool.</p><p>4. Combine couscous, cauliflower, remaining oil and lemon juice. Roughly chop half the coriander and stir through the salad. Season with salt and pepper. Transfer to a serving platter and garnish with remaining coriander.</p>",
+				"image": "CrispyCauliSalad_540x380px.jpg",
+				"ingredientes": "<ul><li>1  cauliflower, trimmed, cut into florets</li><li>1/2 cup olive oil</li><li>2 Tbsp pinenuts</li><li>1  red onion, thinly sliced</li><li>2  garlic cloves, crushed</li><li>2 tsp Moroccan seasoning</li><li>1 cup pearl couscous</li><li>1/4 cup dried cranberries</li><li>1 1/2 cups boiling water</li><li>1/3 cup lemon juice</li><li>1 bunch bunch coriander, sprigs removed</li></ul>"
+			},
+			{
+				"name": "Steak with Pea Puree",
+				"description": "<p>1. Sprinkle beef with rosemary, salt and pepper to season. Cook on barbeque over high heat. When cooked to your liking, leave to rest on a plate and cover with foil.</p><p>2. While meat is resting, heat a medium saucepan over high heat. Add peas, butter and water. Bring to the boil, remove from heat. Process peas until almost smooth. Season to taste.</p><p>3. Serve pea purée with steaks.</p>",
+				"image": "SteaksPeaPuree_540x380px.jpg",
+				"ingredientes": "<ul><li>4  beef scotch fillet steaks (approx 600g)</li><li>1 Tbsp fresh rosemary, finely chopped</li><li>500 g frozen green peas</li><li>30 g butter</li><li>2 Tbsp water</li><li>Salt and pepper to taste</li></ul>"	
+			},
+			{
+				"name": "Summer Salad with Dijon Dressing",
+				"description": "<p>1. To make the dressing, place the oil, vinegar, honey and mustard into a small jar, and shake well.</p><p>2. Onto a platter arrange the lettuce, cucumber, tomatoes and avocado, and sprinkle the basil leaves over the top. </p><p>3. Season with salt and pepper, then drizzle with dressing.</p>",
+				"image": "SummerGreenSalad_240x380px.jpg",
+				"ingredientes": "<ul><li>1/4 cup oil</li><li>2 Tbsp white vinegar</li><li>1 Tbsp honey </li><li>1 tsp Dijon mustard</li><li>120 g bag mixed lettuce</li><li>1/2  telegraph cucumber, cut into pieces</li><li>4  small tomatoes, quartered</li><li>1  avocado, cut into wedges</li><li>1/2  basil leaves</li><li>  Salt</li><li>  Freshly ground pepper</li></ul>"
+			}
+		]
+	}
+]
+

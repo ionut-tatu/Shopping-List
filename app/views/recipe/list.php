@@ -1,6 +1,5 @@
 <main id="recipeList" class="container">
 	<div class="row">
-
 		<?php if($data['recipes']) { ?>
 			<?php foreach ($data['recipes'] as $recipe) { ?>
 				<a href="<?= $recipe['href'] ?>">
@@ -20,7 +19,6 @@
 		<?php } else { ?>
 			<h4>There are no recipes to be displayed at this moment.</h4>
 		<?php } ?>
-
 	</div>
 </main>
 

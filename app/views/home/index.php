@@ -1,1 +1,1 @@
-<a href="recipe">Recipes</a>
+<!-- Silence is golden -->

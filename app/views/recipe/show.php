@@ -19,14 +19,24 @@
 	</div>
 
 	<div class="row">
-		<div class="col-xs-12 col-sm-4 col-md-3">
+		<div class="col-xs-12 col-sm-4 col-md-4">
 			<img src="<?= $data['recipe']['image'] ?>" ?>
 		</div>
-		<div class="col-xs-12 col-sm-8 col-md-9 description">
+		<div class="col-xs-12 col-sm-8 col-md-4 description">
 			<h3><?= $data['recipe']['name'] ?></h3>
 			<p><?= $data['recipe']['description'] ?></p>
-			<a href="<?= $data['recipe']['addToCartUrl'] ?>" class="btn btn-success">Add to Shopping List</a> or <a href="<?= $data['recipe']['backUrl'] ?>">Back to list</a>
+		</div>
+
+		<div class="col-xs-12 col-sm-12 col-md-4 ingredientesList">
+			<h3>Ingredients</h3>
+
+			<?= $data['recipe']['ingredientes'] ?>
 		</div>
 	</div>
 
+	<div class="row">
+		<div class="col-xs-12 text-center addToCart">
+			<a href="<?= $data['recipe']['addToCartUrl'] ?>" class="btn btn-success">Add to Shopping List</a> or <a href="<?= $data['recipe']['backUrl'] ?>">Back to list</a>
+		</div>
+	</div>
 </main>

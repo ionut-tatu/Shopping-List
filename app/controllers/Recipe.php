@@ -1,18 +1,17 @@
 <?php
+/**
+ *	Recipe Class.
+ *	@todo: refactor common urls and stylesheets. Move them up one level.
+ */
 
 class RecipeController extends Controller {
 	private $current_location = 'recipe';
-
-	public function getStylesheets()
-	{
-		$stylesheets = $this->assets->getStylesheets();
-		foreach ($stylesheets as $key => $value) {
-			$stylesheets[$key] = $this->url->buildUrl($value);
-		}
-
-		return $stylesheets;
-	}
- 
+ 	
+ 	/**
+	 *	Get all recipes.
+	 *	
+	 *	@return View
+	 */
 	public function index()
 	{
 		$data['recipeUrl'] = $this->url->buildUrl('public/recipe');
@@ -32,8 +31,8 @@ class RecipeController extends Controller {
 				$data['recipes'][] = [
 					'id' => $value['id'],
 					'name' => $value['name'],
-					'description' => $value['description'],
-					'image' => $value['image'],
+					'description' => substr($value['description'], 0, 100),
+					'image' => $this->url->buildUrl('public/css/images/recipes/' . $value['image']),
 					'href' => $this->url->buildUrl('public/recipe/show/' . $value['id'])
 				];
 			}
@@ -44,9 +43,14 @@ class RecipeController extends Controller {
 		$this->view('recipe/list', $data);
 
 		$this->view('common/footer');
-
 	}
 
+	/**
+	 *	Show specific recipe.
+	 *	
+	 *	@param int $id
+	 *	@return View/Response
+	 */
 	public function show($id) 
 	{
 		$data['recipeUrl'] = $this->url->buildUrl('public/recipe');
@@ -79,6 +83,7 @@ class RecipeController extends Controller {
 				'name' => $results['name'],
 				'description' => $results['description'],
 				'image' => $results['image'],
+				'ingredientes' => $results['ingredientes'],
 				'backUrl' => $this->url->buildUrl('public/recipe'),
 				'addToCartUrl' => $this->url->buildUrl('public/shoppinglist/add/' . $results['id']),
 				'nextRecipe' => $results['nextRecipe'],
@@ -97,6 +102,16 @@ class RecipeController extends Controller {
 		}
 	}
 
-	
+	/**
+	 *	@todo: Move this.
+	 */
+	public function getStylesheets()
+	{
+		$stylesheets = $this->assets->getStylesheets();
+		foreach ($stylesheets as $key => $value) {
+			$stylesheets[$key] = $this->url->buildUrl($value);
+		}
 
+		return $stylesheets;
+	}
 }

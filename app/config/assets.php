@@ -1,5 +1,10 @@
 <?php
 
+/**
+ *	Config File. Add stylesheets or javascripts here.
+ *	See app/system/helper/Asset.php for more details
+ */
+
 function getAssets() 
 {
 	return [

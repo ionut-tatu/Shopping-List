@@ -1,23 +1,37 @@
 <?php
 
 /**
- * Main Controller. It will handle models and views.
+ * 	Main Controller to handle models and views.
+ *	@todo: Split Model and View to separate controllers.
  */
 
 class Controller
 {
 	protected $registry;
 
+	/**
+	 *	@param Registry $registry
+	 *	@return void
+	 */
 	public function __construct($registry) 
 	{
 		$this->registry = $registry;
 	}
 
+	/**
+	 *	@param string $key
+	 *	@return bool
+	 */
 	public function __get($key) 
 	{
 		return $this->registry->get($key);
 	}
 
+	/**
+	 *	@param string $key
+	 *	@param string $value
+	 *	@return void
+	 */
 	public function __set($key, $value) 
 	{
 		$this->registry->set($key, $value);

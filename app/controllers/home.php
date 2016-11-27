@@ -1,11 +1,15 @@
 <?php
 
+/**
+ *	Silence is golden.
+ */
+
 class HomeController extends Controller 
 {
 
-	public function index($name = '') 
+	public function index() 
 	{
-		$this->view('home/index', ['name' => $name]);
+		return;
 	}
 
 

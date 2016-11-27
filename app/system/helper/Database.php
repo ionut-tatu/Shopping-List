@@ -7,6 +7,11 @@ class DB
 
 	public function __construct($hostname, $username, $password, $database, $port = '3306')
 	{
+		if(empty($hostname) || empty($username) || empty($database)) {
+			echo '<p>It looks like the app/config/database.php is missing some config variables. Please check and try again!</p>';
+			exit();
+		}
+
 		try {
 			$this->connection = new \PDO("mysql:host=" . $hostname . ";port=" . $port . ";dbname=" . $database, $username, $password, array(\PDO::ATTR_PERSISTENT => true));
 		} catch(\PDOException $e) {
@@ -52,6 +57,11 @@ class DB
 		}
 	}
 
+	/**
+	 * 	@param string $sql
+	 *	@param array $params
+	 *	@return Object $result
+	 */
 	public function query($sql, $params = array()) 
 	{
 		$this->statement = $this->connection->prepare($sql);
@@ -82,11 +92,18 @@ class DB
 		}
 	}
 
+	/**
+	 *	@param string $value
+	 *	@return string
+	 */
 	public function escape($value) 
 	{
 		return str_replace(array("\\", "\0", "\n", "\r", "\x1a", "'", '"'), array("\\\\", "\\0", "\\n", "\\r", "\Z", "\'", '\"'), $value);
 	}
 
+	/**
+	 *	@return void
+	 */
 	public function __destruct()
 	{
 		$this->connection = null;

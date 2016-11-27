@@ -2,13 +2,11 @@
 
 /**
  * This is the main class that will handle core application jobs
- * todo: (improve) Create a URL helper and a loader helper
  */
 
 class App 
 {
-
-	protected $controller = 'home';
+	protected $controller = 'recipe';
 	protected $method = 'index';
 	protected $params = [];
 
@@ -53,7 +51,7 @@ class App
 	}
 
 	/**
-	 *	Parse URL. Sanitize and explode params.
+	 *	Parse URL. Sanitise and explode params.
 	 *
 	 * 	@return array $url 
 	 */
@@ -67,5 +65,4 @@ class App
 			return $url;
 		}
 	}
-
 }

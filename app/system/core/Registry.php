@@ -5,7 +5,6 @@
  */
 final class Registry 
 {
-
 	protected $data = [];
 
 	/**
@@ -30,8 +29,6 @@ final class Registry
 	}
 
 	/**
-	 *	Check if Registry has this key already
-	 *
 	 *	@param string $key
 	 *	@return bool
 	 */
@@ -39,5 +36,4 @@ final class Registry
 	{
 		return isset($this->data[$key]);
 	}
-
 }

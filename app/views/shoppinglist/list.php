@@ -1,5 +1,4 @@
 <main id="shoppingListList" class="container">
-
 	<?php if($data['success_message']) { ?>
 		<div class="alert alert-success">
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -23,7 +22,7 @@
 				<?php foreach ($data['recipes'] as $key => $recipe) { ?>
 					<tr>
 						<td><?= $key + 1 ?></td>
-						<td><img src="<?= $recipe['image'] ?>" /></td>
+						<td><img src="<?= $recipe['image'] ?>" width="100" /></td>
 						<td><?= $recipe['name'] ?></td>
 						<td><a href="<?= $recipe['remove'] ?>"><i class="fa fa-trash-o"></i></a></td>
 					</tr>
@@ -31,7 +30,9 @@
 					</tbody>
 				</table>
 
-				<a href="#" class="btn btn-success">Generate Shopping List</a>
+				<div class="text-center">
+					<a href="<?= $data['generate'] ?>" class="btn btn-success">Generate Shopping List</a>
+				</div>
 			<?php } else { ?>
 				<h4>There are no recipes in your shopping list. <a href="<?= $data['recipeUrl'] ?>">See recipes list.</a></h4>
 			<?php } ?>

@@ -2,7 +2,6 @@
 
 class Session
 {
-
 	public $session_id = '';
 	public $data = [];
 
@@ -69,7 +68,8 @@ class Session
 	 *	@param string $key
 	 *	@return void
 	 */
-	public function destroy($key = 'default') {
+	public function destroy($key = 'default') 
+	{
 		if (isset($_SESSION[$key])) {
 			unset($_SESSION[$key]);
 		}

@@ -3,13 +3,14 @@
 class Recipe extends Controller 
 {
 	
-	public function getRecipes($data = [])
+	/**
+	 *	Retrive all recipes from database. 
+	 *
+	 *	@return array/bool
+	 */
+	public function getRecipes()
 	{
 		$sql = "SELECT id, name, description, image FROM recipes";
-
-		if(isset($data['limit'])) {
-			$sql .= " LIMIT $data[limit]";
-		}
 
 		$results = $this->db->query($sql);
 
@@ -20,13 +21,19 @@ class Recipe extends Controller
 		return false;
 	}
 
+	/**
+	 *	Retrive recipe from database based on recipe id. 
+	 *
+	 *	@param int $id
+	 *	@return array/bool
+	 */
 	public function getRecipe($id) 
 	{
 		if(!$id) {
 			return false;
 		}
 
-		$sql = "SELECT id, name, description, image FROM recipes WHERE id = $id";
+		$sql = "SELECT id, name, description, image, ingredientes FROM recipes WHERE id = $id";
 
 		$results = $this->db->query($sql);
 
@@ -35,7 +42,8 @@ class Recipe extends Controller
 				'id' => $results->row['id'],
 				'name' => $results->row['name'],
 				'description' => $results->row['description'],
-				'image' => $results->row['image'],
+				'image' => $this->url->buildUrl('public/css/images/recipes/' . $results->row['image']),
+				'ingredientes' => $results->row['ingredientes'],
 				'nextRecipe' => $this->getNextId($results->row['id']),
 				'previousRecipe' => $this->getPreviousId($results->row['id'])
 			];
@@ -46,7 +54,7 @@ class Recipe extends Controller
 
 
 	/**
-	 *	@todo: Rewrite functions.
+	 *	@todo: Rewrite functions. 
 	 */
 	private function getNextId($id)
 	{
